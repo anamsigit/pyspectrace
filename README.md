@@ -22,9 +22,9 @@ This project is inspired by prior works such as OceanOptics' OceanView, Insplore
 
 ## Links & Resources
 - **Repository:** [https://github.com/anamsigit/pyspectrace](https://github.com/anamsigit/pyspectrace)
-- **Manual:** [https://github.com/anamsigit/pyspectrace/blob/main/manual.pdf](https://github.com/anamsigit/spectrometer-realtime-analysis/blob/main/manual.pdf)
-- **Supporting information:** [https://github.com/anamsigit/spectrometer-realtime-analysis/blob/main/manual.pdf](https://github.com/anamsigit/spectrometer-realtime-analysis/blob/main/manual.pdf)
-- **Video usage and demonstration:** [https://github.com/anamsigit/spectrometer-realtime-analysis/blob/main/manual.pdf](https://github.com/anamsigit/spectrometer-realtime-analysis/blob/main/manual.pdf)
+- **Manual:** [Manual_PySpecTrace.pdf](https://github.com/anamsigit/pyspectrace/blob/main/Manual_PySpecTrace.pdf)
+- **Supporting information:** [SI_PySpecTrace](https://github.com/anamsigit/pyspectrace/blob/main/SI_PySpecTrace.pdf)
+- **Video usage and demonstration:** [Google drive](https://drive.google.com/file/d/1Tj6Fig017nFhzMavVcG9cRoBS5tbMKVn/view?usp=sharing)
 
 ## License
 Apache License 2.0
