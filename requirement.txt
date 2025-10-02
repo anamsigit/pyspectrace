@@ -1,0 +1,7 @@
+numpy==1.26.4
+pandas==1.4.1
+matplotlib==3.5.1
+PyQt5==5.15.11
+pyqtgraph==0.13.7
+scipy==1.13.1
+seatease==0.4.0
