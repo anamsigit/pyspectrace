@@ -2,6 +2,8 @@
 
 **PySpecTrace** is an open-source, Python-based graphical user interface (GUI) designed for real-time UV-visible spectroscopy data analysis. It addresses the limitations of proprietary spectrometer software by providing advanced, customizable, and real-time spectral tracking and analysis tools suitable for a wide range of scientific disciplines.
 
+![Alt text](illustration.png)
+
 ## Key Features
 - **Real-time spectral visualization:** Enables immediate monitoring of spectral changes during experiments.
 - **Dynamic spectral tracing and peak tracking:** Utilizes adaptive fitting routines to identify and track spectral features live.
