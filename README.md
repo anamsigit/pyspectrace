@@ -18,7 +18,7 @@
 Existing commercial solutions often limit analysis flexibility and are tied to specific hardware. PySpecTrace fills this gap by providing an open, versatile, and accessible tool that accelerates real-time decision-making in material science, chemistry, biology, and related fields.
 
 ## References
-This project is inspired by prior works such as OceanOptics' OceanView, Insplorer software, and the authors’ previous development efforts [T1–T3].
+This project is inspired by prior works such as OceanOptics' OceanView, Insplorer software, and the authors’ previous development efforts.
 
 ## Links & Resources
 - **Repository:** [https://github.com/anamsigit/pyspectrace](https://github.com/anamsigit/pyspectrace)
