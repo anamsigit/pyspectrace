@@ -33,4 +33,4 @@ Apache License 2.0
 
 ---
 
-*Sigit Khoirul Anam, Suwardi, Ferry Anggoro Ardy Nugroho, and Iwan Darmadi.*
+*Iwan Darmadi, Sigit Khoirul Anam, Suwardi, Ferry Anggoro Ardy Nugroho, Andrea Baldi.*
