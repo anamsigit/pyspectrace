@@ -4,6 +4,14 @@
 
 ![Alt text](GUI_snapshot.png)
 
+## How to Install and Run
+- Detailed steps for installation and running documented in the Manual: [Manual_PySpecTrace.pdf](https://github.com/anamsigit/pyspectrace/blob/main/Manual_PySpecTrace.pdf)
+
+## Extra Documentation
+- **Repository:** [https://github.com/anamsigit/pyspectrace](https://github.com/anamsigit/pyspectrace)
+- **Supporting information:** [PySpecTrace_SI.pdf](https://github.com/anamsigit/pyspectrace/blob/main/PySpecTrace_SI.pdf)
+- **Demonstration video:** [Google drive](https://drive.google.com/file/d/1Tj6Fig017nFhzMavVcG9cRoBS5tbMKVn/view?usp=sharing)
+
 ## Key Features
 - **Real-time spectral visualization:** Enables immediate monitoring of spectral changes during experiments.
 - **Dynamic spectral tracing and peak tracking:** Utilizes adaptive fitting routines to identify and track spectral features live.
@@ -22,15 +30,9 @@ Existing commercial solutions often limit analysis flexibility and are tied to s
 ## References
 This project is inspired by prior works such as OceanOptics' OceanView, Insplorer software, and the authors’ previous development efforts.
 
-## Links & Resources
-- **Repository:** [https://github.com/anamsigit/pyspectrace](https://github.com/anamsigit/pyspectrace)
-- **Manual:** [Manual_PySpecTrace.pdf](https://github.com/anamsigit/pyspectrace/blob/main/Manual_PySpecTrace.pdf)
-- **Supporting information:** [PySpecTrace_SI.pdf](https://github.com/anamsigit/pyspectrace/blob/main/PySpecTrace_SI.pdf)
-- **Demonstration video:** [Google drive](https://drive.google.com/file/d/1Tj6Fig017nFhzMavVcG9cRoBS5tbMKVn/view?usp=sharing)
-
 ## License
 Apache License 2.0
 
 ---
 
-*Sigit Khoirul Anam, Suwardi, Andrea Baldi, Ferry Anggoro Ardy Nugroho, Iwan Darmadi, *
+*Sigit Khoirul Anam, Suwardi, Andrea Baldi, Ferry Anggoro Ardy Nugroho, Iwan Darmadi *
