@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QWidget, QTabWidget, QVBoxLayout, QComboBox, QGroupBox, QLabel
+from PyQt5.QtWidgets import QWidget
 from .Acquisition.acquisitionlayout import AcquisitionLayout
 from .Reference.referencelayout import ReferenceLayout
 from .Processing.processinglayout import ProcessingLayout

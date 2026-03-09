@@ -1,6 +1,5 @@
 from Control.Plotting.Spectrum.spectrumcontrol import SpectrumControl
 from Control.Plotting.Sensorgram.sensorgramcontrol import SensorgramControl
-from PyQt5.QtCore import QTimer
 
 class PlottingControl:
     def __init__(self, 
