@@ -26,11 +26,11 @@ This project is inspired by prior works such as OceanOptics' OceanView, Insplore
 - **Repository:** [https://github.com/anamsigit/pyspectrace](https://github.com/anamsigit/pyspectrace)
 - **Manual:** [Manual_PySpecTrace.pdf](https://github.com/anamsigit/pyspectrace/blob/main/Manual_PySpecTrace.pdf)
 - **Supporting information:** [PySpecTrace_SI.pdf](https://github.com/anamsigit/pyspectrace/blob/main/PySpecTrace_SI.pdf)
-- **Video usage and demonstration:** [Google drive](https://drive.google.com/file/d/1Tj6Fig017nFhzMavVcG9cRoBS5tbMKVn/view?usp=sharing)
+- **Demonstration video:** [Google drive](https://drive.google.com/file/d/1Tj6Fig017nFhzMavVcG9cRoBS5tbMKVn/view?usp=sharing)
 
 ## License
 Apache License 2.0
 
 ---
 
-*Iwan Darmadi, Sigit Khoirul Anam, Suwardi, Ferry Anggoro Ardy Nugroho, Andrea Baldi.*
+*Sigit Khoirul Anam, Suwardi, Andrea Baldi, Ferry Anggoro Ardy Nugroho, Iwan Darmadi, *
