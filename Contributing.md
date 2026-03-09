@@ -3,7 +3,7 @@ Thank you for your interest in making PySpecTrace better! Whether you are a spec
 
 ## 🌟 Ways to Contribute
 
-**Feature Requests**: Suggest new tools for the UV-VIS-NIR analysis suite.
+**Feature Requests**: Suggest new tools for the UV-VIS-NIR real-time analysis suite.
 
 **Bug Reports**: Help us find and fix edge cases in spectrometer interfacing.
 
