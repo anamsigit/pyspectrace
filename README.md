@@ -1,8 +1,16 @@
-# PySpecTrace: Python-based Graphical User Interface for Real-time Spectroscopy Analysis
+# PySpecTrace: Python-based Graphical User Interface (GUI) for Real-time UV-vis-NIR Spectroscopy Analysis
 
 **PySpecTrace** is an open-source, Python-based graphical user interface (GUI) designed for real-time UV-visible spectroscopy data analysis. It addresses the limitations of proprietary spectrometer software by providing advanced, customizable, and real-time spectral tracking and analysis tools suitable for a wide range of scientific disciplines.
 
-![Alt text](illustration.png)
+![Alt text](GUI_snapshot.png)
+
+## How to Install and Run
+- Detailed steps for installation and running documented in the Manual: [Manual_PySpecTrace.pdf](https://github.com/anamsigit/pyspectrace/blob/main/Manual_PySpecTrace.pdf)
+
+## Extra Documentation
+- **Repository:** [https://github.com/anamsigit/pyspectrace](https://github.com/anamsigit/pyspectrace)
+- **Supporting information:** [PySpecTrace_SI.pdf](https://github.com/anamsigit/pyspectrace/blob/main/PySpecTrace_SI.pdf)
+- **Demonstration video:** [Google drive](https://drive.google.com/file/d/1Tj6Fig017nFhzMavVcG9cRoBS5tbMKVn/view?usp=sharing)
 
 ## Key Features
 - **Real-time spectral visualization:** Enables immediate monitoring of spectral changes during experiments.
@@ -22,15 +30,9 @@ Existing commercial solutions often limit analysis flexibility and are tied to s
 ## References
 This project is inspired by prior works such as OceanOptics' OceanView, Insplorer software, and the authors’ previous development efforts.
 
-## Links & Resources
-- **Repository:** [https://github.com/anamsigit/pyspectrace](https://github.com/anamsigit/pyspectrace)
-- **Manual:** [Manual_PySpecTrace.pdf](https://github.com/anamsigit/pyspectrace/blob/main/Manual_PySpecTrace.pdf)
-- **Supporting information:** [PySpecTrace_SI.pdf](https://github.com/anamsigit/pyspectrace/blob/main/PySpecTrace_SI.pdf)
-- **Video usage and demonstration:** [Google drive](https://drive.google.com/file/d/1Tj6Fig017nFhzMavVcG9cRoBS5tbMKVn/view?usp=sharing)
-
 ## License
 Apache License 2.0
 
 ---
 
-*Iwan Darmadi, Sigit Khoirul Anam, Suwardi, Ferry Anggoro Ardy Nugroho, Andrea Baldi.*
+*Sigit Khoirul Anam, Suwardi, Andrea Baldi, Ferry Anggoro Ardy Nugroho, Iwan Darmadi *
