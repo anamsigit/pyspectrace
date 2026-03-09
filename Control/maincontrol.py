@@ -6,10 +6,8 @@ import sys
 import time
 import os
 from PyQt5.QtWidgets import (
-    QApplication, QMainWindow, QTabWidget, QWidget, QVBoxLayout, 
-    QHBoxLayout, QLabel, QPushButton, QSpinBox, QAction, QCheckBox, 
-    QFileDialog, QComboBox, QGroupBox, QLineEdit, QFormLayout, QTableWidget,
-    QColorDialog, QDoubleSpinBox, QSlider, QMessageBox
+    QFileDialog,
+    QMessageBox
 )
 import numpy as np
 

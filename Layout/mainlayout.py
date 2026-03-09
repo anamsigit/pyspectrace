@@ -1,12 +1,10 @@
 from PyQt5.QtWidgets import QTabWidget, QListWidget, QSplitter, QWidget, QGridLayout, QVBoxLayout, QHBoxLayout, QPushButton, QMainWindow, QGroupBox, QLabel
-from PyQt5.QtCore import QTimer, Qt
-from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
-from matplotlib.figure import Figure
+from PyQt5.QtCore import Qt
 
 from Layout.Configuration.configurationlayout import ConfigurationLayout
 from Layout.Menusbar.menusbarlayout import MenusbarLayout
 from Layout.Plotting.plottinglayout import PlottingLayout
-import pyqtgraph as pg
+
 
 class MainLayout(QMainWindow):
     def __init__(self):

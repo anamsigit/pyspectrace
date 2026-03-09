@@ -1,7 +1,3 @@
-import os
-import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 from Control.Menusbar.File.filecontrol import FileControl
 from Control.Menusbar.Tool.toolcontrol import ToolControl
 

@@ -1,12 +1,4 @@
 
-from PyQt5.QtCore import Qt, QThread, pyqtSignal, QTimer
-from matplotlib.figure import Figure
-from PyQt5.QtGui import QIntValidator, QDoubleValidator, QColor
-from PyQt5.QtWidgets import (
-    QApplication, QMainWindow, QTabWidget, QWidget, QVBoxLayout, 
-    QHBoxLayout, QLabel, QPushButton, QSpinBox, QMenu, QFileDialog
-)
-
 import numpy as np
 import pyqtgraph as pg
 

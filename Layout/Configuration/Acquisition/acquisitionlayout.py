@@ -1,17 +1,7 @@
-import sys
-import numpy as np
-from PyQt5.QtCore import Qt, QThread, pyqtSignal
-import matplotlib.pyplot as plt
-import seatease.cseatease as spectro
-from matplotlib.figure import Figure
-from PyQt5.QtGui import QIntValidator, QDoubleValidator
-from PyQt5.QtWidgets import (
-    QApplication, QMainWindow, QTabWidget, QWidget, QVBoxLayout, 
-    QHBoxLayout, QLabel, QPushButton, QSpinBox, QAction, QCheckBox, 
-    QFileDialog, QComboBox, QGroupBox, QLineEdit, QFormLayout, QTableWidget,
-    QColorDialog
+from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import (QTabWidget, QWidget, QVBoxLayout, QCheckBox, 
+    QComboBox, QGroupBox
 )
-from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from .Communication.communicationlayout import CommunicationLayout
 from .Saving.savinglayout import SavingLayout
 from .Info.infolayout import InfoLayout
