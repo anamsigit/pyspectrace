@@ -25,7 +25,7 @@
 - Uses popular Python libraries including **PyQt5, NumPy, SciPy, Pandas, Matplotlib, and PyqtGraph**.
 
 ## List of working spectrometers
-PySpecTrace v.1.0.0 has been tested and working seamlessly on these commercial spectrometers (on Windows OS):
+PySpecTrace v.1.0.0 has been tested and working seamlessly with these commercial spectrometers (on Windows OS):
 ### Ocean optios:
 - Maya PRO2000
 - HR 4000CG-UV-NIR
