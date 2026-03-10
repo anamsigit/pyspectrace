@@ -24,15 +24,19 @@
 - Built on a **Model-View-Presenter (MVP)** pattern for maintainability and scalability.
 - Uses popular Python libraries including **PyQt5, NumPy, SciPy, Pandas, Matplotlib, and PyqtGraph**.
 
-## Motivation & Impact
-Existing commercial solutions often limit analysis flexibility and are tied to specific hardware. PySpecTrace fills this gap by providing an open, versatile, and accessible tool that accelerates real-time decision-making in material science, chemistry, biology, and related fields.
+## List of working spectrometers
+PySpecTrace v.1.0.0 has been tested and working seamlessly on these commercial spectrometers (on Windows OS):
+### Ocean optios:
+- Maya PRO2000
+- HR 4000CG-UV-NIR
+### Avantes:
+- AvaSpec-ULS4096CL-EVO
+### CNI:
+- Aurora 4000
 
-## References
-This project is inspired by prior works such as OceanOptics' OceanView, Insplorer software, and the authors’ previous development efforts.
+Please add to the list if you have found that it works in your spectrometer. It will be a nice information the new user.
 
-## License
-Apache License 2.0
 
 ---
 
-*Sigit Khoirul Anam, Suwardi, Andrea Baldi, Ferry Anggoro Ardy Nugroho, Iwan Darmadi *
+*Sigit Khoirul Anam, Suwardi, Andrea Baldi, Ferry Anggoro Ardy Nugroho, Iwan Darmadi*
