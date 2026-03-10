@@ -34,7 +34,7 @@ PySpecTrace v.1.0.0 has been tested and working seamlessly on these commercial s
 ### CNI:
 - Aurora 4000
 
-Please add to the list if you have found that it works in your spectrometer. It will be a nice information the new user.
+Please add to the list if you have found that it works in your spectrometer. It will be a nice information for new user.
 
 
 ---
