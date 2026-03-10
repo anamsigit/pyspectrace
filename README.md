@@ -1,6 +1,6 @@
 # PySpecTrace: Python-based Graphical User Interface (GUI) for Real-time UV-vis-NIR Spectroscopy Analysis
 
-**PySpecTrace** is an open-source, Python-based graphical user interface (GUI) designed for real-time UV-visible spectroscopy data analysis. It addresses the limitations of proprietary spectrometer software by providing advanced, customizable, and real-time spectral tracking and analysis tools suitable for a wide range of scientific disciplines.
+**PySpecTrace** is an open-source, Python-based graphical user interface (GUI) designed for real-time UV-visible-NIR spectroscopy data analysis. It addresses the limitations of proprietary spectrometer software by providing advanced, customizable, and real-time spectral tracking and analysis tools suitable for a wide range of scientific disciplines.
 
 ![Alt text](GUI_snapshot.png)
 
