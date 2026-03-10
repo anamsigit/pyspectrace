@@ -1,5 +1,3 @@
-import numpy as np
-
 class SpectrumControl:
     def __init__(self, 
                  model, 

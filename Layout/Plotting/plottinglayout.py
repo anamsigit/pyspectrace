@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QWidget, QTabWidget, QVBoxLayout, QComboBox, QGroupBox
+from PyQt5.QtWidgets import QWidget
 from .Spectrum.spectrumlayout import SpectrumLayout
 from .Sensorgram.sensorgramlayout import SensorgramLayout
 

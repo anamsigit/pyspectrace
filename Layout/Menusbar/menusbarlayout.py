@@ -1,7 +1,4 @@
 from PyQt5.QtWidgets import QMenuBar, QAction
-import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 from Layout.Menusbar.Tool.toollayout import ToolLayout
 from Layout.Menusbar.File.showrecordcontrollerlayout import ShowRecordControllerLayout
 from Layout.Menusbar.File.exitlayout import ExitLayout
