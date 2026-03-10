@@ -5,7 +5,7 @@
 ![Alt text](GUI_snapshot.png)
 
 ## How to Install and Run
-- Detailed steps for installation and running documented in the Manual: [Manual_PySpecTrace.pdf](https://github.com/anamsigit/pyspectrace/blob/main/Manual_PySpecTrace.pdf)
+- Detailed steps for installation and running documented in the Manual: [PySpecTrace_Manual.pdf](https://github.com/anamsigit/pyspectrace/blob/main/PySpecTrace_Manual.pdf)
 
 ## Extra Documentation
 - **Repository:** [https://github.com/anamsigit/pyspectrace](https://github.com/anamsigit/pyspectrace)
