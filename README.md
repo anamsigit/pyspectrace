@@ -37,6 +37,9 @@ PySpecTrace v.1.0.0 has been tested and working seamlessly with these commercial
 
 Please add to the list if you have found that it works in your spectrometer. It will be a nice information for new user.
 
+## Corresponding contact
+- Feel free to contact us via Iwan Darmadi (email:iwan.darmadi@alumni.ui.ac.id)
+
 
 ---
 
