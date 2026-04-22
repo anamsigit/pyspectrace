@@ -29,7 +29,7 @@ PySpecTrace v.1.0.0 has been tested and working seamlessly with these commercial
 ### Ocean optics:
 - Maya PRO2000
 - HR 4000CG-UV-NIR
-- USB4000
+
 ### Avantes:
 - AvaSpec-ULS4096CL-EVO
 ### CNI:
