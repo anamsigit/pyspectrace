@@ -2,10 +2,38 @@
 
 **PySpecTrace** is an open-source, Python-based graphical user interface (GUI) designed for real-time UV-visible-NIR spectroscopy data analysis. It addresses the limitations of proprietary spectrometer software by providing advanced, customizable, and real-time spectral tracking and analysis tools suitable for a wide range of scientific disciplines.
 
-![Alt text](GUI_snapshot.png)
+![PySpecTrace Application](GUI_snapshot.gif)
 
 ## How to Install and Run
-- Detailed steps for installation and running documented in the Manual: [PySpecTrace_Manual.pdf](https://github.com/anamsigit/pyspectrace/blob/main/PySpecTrace_Manual.pdf)
+### Download the Code
+- Go to the repository: [pyspectrace](https://github.com/anamsigit/pyspectrace)
+- Click code then download ZIP
+- Extract the ZIP file to your desired location
+
+### Install Dependencies
+Open a terminal or Command Prompt in the extracted project directory then run the following command:
+```
+pip install -r requirements.txt
+```
+
+### Run the Application 
+After installation is complete, start the program with:
+```
+python main.py
+```
+
+### Spectrometer SDK Setup
+To connect the software with supported spectrometers, you must manually provide the required SDK files (DLLs). These SDKs are proprietary and must be obtained directly from the hardware manufacturers. Place the SDK files in the following directories:
+- Ocean Optics Spectrometer: ```Model/OceanSpectrometer/Oceandirect/lib```
+- Avantes Spectrometer: ```Model/AvanterSpectrometer/SDK```
+- CNI Laser Spectrometer: ```Model/CNILaserSpectrometer/SDK```
+
+***Notes for Avantes Spectrometer***: If the spectrometer is still not detected after placing the SDK, please Install the official Avantes interface software from https://www.avantes.com/products/software/
+
+> Detailed steps for running documented in the Manual: [PySpecTrace_Manual.pdf](https://github.com/anamsigit/pyspectrace/blob/main/PySpecTrace_Manual.pdf)
+
+_If you encounter any issues or need assistance, we will do our best to help. Please feel free to contact us via the **Corresponding Contact**_
+
 
 ## Extra Documentation
 - **Repository:** [https://github.com/anamsigit/pyspectrace](https://github.com/anamsigit/pyspectrace)
@@ -22,18 +50,19 @@
 
 ## Architecture
 - Built on a **Model-View-Presenter (MVP)** pattern for maintainability and scalability.
-- Uses popular Python libraries including **PyQt5, NumPy, SciPy, Pandas, Matplotlib, and PyqtGraph**.
+- Uses popular Python libraries including **PyQt5, NumPy, SciPy, Pandas, Matplotlib, and PyQtGraph**.
+- This project has been tested with **Python 3.9.13**.
 
 ## List of working spectrometers
 PySpecTrace v.1.0.0 has been tested and working seamlessly with these commercial spectrometers (on Windows OS):
-### Ocean optics:
-- Maya PRO2000
-- HR 4000CG-UV-NIR
-- USB4000
-### Avantes:
-- AvaSpec-ULS4096CL-EVO
-### CNI:
-- Aurora 4000
+
+## Supported Spectrometers
+
+| Ocean Optics           | Avantes                      | CNI          |
+|-----------------------|------------------------------|--------------|
+| Maya PRO2000          | AvaSpec-ULS4096CL-EVO        | Aurora 4000  |
+| HR 4000CG-UV-NIR      | AvaSpec-2048-USB2            |              |
+| USB4000               |                              |              |
 
 Please add to the list if you have found that it works in your spectrometer. It will be a nice information for new user.
 
