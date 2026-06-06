@@ -1,9 +1,8 @@
-from PyQt5.QtCore import QTimer
 import numpy as np
 from datetime import datetime
 import os
 from PyQt5.QtWidgets import (
-    QFileDialog, QMessageBox
+    QFileDialog
 )
 
 class BrightSpectrumControl:

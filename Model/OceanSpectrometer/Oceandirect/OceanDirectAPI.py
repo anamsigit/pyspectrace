@@ -10,8 +10,8 @@ from ctypes import cdll, c_int, c_ushort, c_uint, c_long, create_string_buffer, 
 from enum import Enum,auto
 # from oceandirect.sdk_properties import oceandirect_dll
 # from oceandirect.od_logger import od_logger
-from Model.OceanSpectrometer.Oceandirect.sdk_properties import oceandirect_dll
-from Model.OceanSpectrometer.Oceandirect.od_logger import od_logger
+from pyspectrace.Model.OceanSpectrometer.Oceandirect.sdk_properties import oceandirect_dll
+from pyspectrace.Model.OceanSpectrometer.Oceandirect.od_logger import od_logger
 
 
 logger = od_logger()

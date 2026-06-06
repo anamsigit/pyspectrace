@@ -4,9 +4,9 @@ import numpy as np
 import re
 from PyQt5.QtWidgets import (
     QApplication, QMainWindow, QPushButton, QVBoxLayout, QWidget, 
-    QFileDialog, QLabel, QProgressBar, QHBoxLayout, QMessageBox
+    QFileDialog, QProgressBar, QMessageBox
 )
-from PyQt5.QtCore import Qt, QThread, pyqtSignal
+from PyQt5.QtCore import QThread, pyqtSignal
 
 def extract_data_from_file(file_path):
     wavelengths = []

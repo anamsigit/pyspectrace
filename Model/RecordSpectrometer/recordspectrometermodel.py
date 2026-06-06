@@ -1,13 +1,8 @@
-import sys
-import os
 import numpy as np
-from PyQt5.QtWidgets import (
-    QApplication, QMainWindow, QTabWidget, QWidget, QVBoxLayout, 
-    QHBoxLayout, QLabel, QPushButton, QSpinBox, QAction, QCheckBox, 
-    QFileDialog, QComboBox, QGroupBox, QLineEdit, QFormLayout, QTableWidget,
-    QColorDialog, QDoubleSpinBox, QSlider, QMessageBox
+from PyQt5.QtWidgets import (QMainWindow, QWidget, QVBoxLayout, 
+    QHBoxLayout, QLabel, QSpinBox, QGroupBox, QDoubleSpinBox, QSlider, QMessageBox
 )
-from PyQt5.QtCore import Qt, QTimer, pyqtSignal
+from PyQt5.QtCore import Qt, pyqtSignal
 import pyqtgraph as pg
 import numpy as np
 

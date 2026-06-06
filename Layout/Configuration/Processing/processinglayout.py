@@ -1,11 +1,7 @@
-from PyQt5.QtWidgets import (
-    QTabWidget, QWidget, QVBoxLayout, 
-    QCheckBox, QComboBox,
-)
-from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
-from Layout.Configuration.Processing.Shift.shiftlayout import ShiftLayout
-from Layout.Configuration.Processing.ShiftPeak.shiftpeaklayout import ShiftPeakLayout
-from Layout.Configuration.Processing.ShiftPeakWidth.shiftpeakwidthlayout import ShiftPeakWidthLayout
+from PyQt5.QtWidgets import (QTabWidget, QWidget, QVBoxLayout, QCheckBox, QComboBox)
+from pyspectrace.Layout.Configuration.Processing.Shift.shiftlayout import ShiftLayout
+from pyspectrace.Layout.Configuration.Processing.ShiftPeak.shiftpeaklayout import ShiftPeakLayout
+from pyspectrace.Layout.Configuration.Processing.ShiftPeakWidth.shiftpeakwidthlayout import ShiftPeakWidthLayout
 
 class ProcessingLayout(QWidget): 
     def __init__(self, parent):

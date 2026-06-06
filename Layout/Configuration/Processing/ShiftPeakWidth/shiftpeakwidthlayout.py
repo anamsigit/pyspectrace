@@ -1,18 +1,8 @@
-import sys
-import numpy as np
-from PyQt5.QtCore import Qt, QThread, pyqtSignal, QTimer
-import matplotlib.pyplot as plt
-import seatease.cseatease as spectro
-from matplotlib.figure import Figure
-from PyQt5.QtGui import QIntValidator, QDoubleValidator
-from PyQt5.QtWidgets import (
-    QApplication, QMainWindow, QTabWidget, QWidget, QVBoxLayout
-)
+from PyQt5.QtWidgets import (QWidget, QVBoxLayout)
 
-from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
-from Layout.Configuration.Processing.ShiftPeakWidth.GaussianPeakWidthFitting.gaussianpeakwidthfittinglayout import GaussianPeakWidthFittingLayout
-from Layout.Configuration.Processing.ShiftPeakWidth.LorentzianPeakWidthFitting.lorentzianpeakwidthfittinglayout import LorentzianPeakWidthFittingLayout
-from Layout.Configuration.Processing.ShiftPeakWidth.PolynomialPeakWidthFitting.polynomialpeakwidthfittinglayout import PolynomialPeakWidthFittingLayout
+from pyspectrace.Layout.Configuration.Processing.ShiftPeakWidth.GaussianPeakWidthFitting.gaussianpeakwidthfittinglayout import GaussianPeakWidthFittingLayout
+from pyspectrace.Layout.Configuration.Processing.ShiftPeakWidth.LorentzianPeakWidthFitting.lorentzianpeakwidthfittinglayout import LorentzianPeakWidthFittingLayout
+from pyspectrace.Layout.Configuration.Processing.ShiftPeakWidth.PolynomialPeakWidthFitting.polynomialpeakwidthfittinglayout import PolynomialPeakWidthFittingLayout
 
 class ShiftPeakWidthLayout(QWidget): 
     def __init__(self, parent):

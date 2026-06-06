@@ -1,5 +1,6 @@
-from Control.Menusbar.File.filecontrol import FileControl
-from Control.Menusbar.Tool.toolcontrol import ToolControl
+from pyspectrace.Control.Menusbar.File.filecontrol import FileControl
+from pyspectrace.Control.Menusbar.Tool.toolcontrol import ToolControl
+from pyspectrace.Control.Menusbar.SDK.sdkcontrol import SDKControl
 
 class MenusbarControl:
     def __init__(self, 
@@ -10,3 +11,4 @@ class MenusbarControl:
 
         self.filecontrol = FileControl(model, view)
         self.toolcontrol = ToolControl(model, view)
+        self.sdkcontrol = SDKControl(model, view)

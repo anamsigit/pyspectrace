@@ -1,8 +1,6 @@
 import numpy as np
 from datetime import datetime, timedelta
-import time
 import os
-from PyQt5.QtCore import Qt
 
 class SavingControl:
     def __init__(self, model, view):

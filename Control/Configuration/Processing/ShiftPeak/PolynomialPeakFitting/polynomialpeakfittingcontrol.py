@@ -1,5 +1,5 @@
 import numpy as np
-from scipy.optimize import curve_fit, fsolve, minimize_scalar, root, root_scalar, OptimizeWarning
+from scipy.optimize import fsolve, OptimizeWarning
 import threading
 import warnings
 import copy

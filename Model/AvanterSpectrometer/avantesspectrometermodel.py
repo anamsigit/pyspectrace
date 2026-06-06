@@ -1,10 +1,7 @@
-import os
 import time
-import numpy as np
-import matplotlib.pyplot as plt
 from PyQt5.QtCore import pyqtSignal, QThread
 
-from Model.AvanterSpectrometer.avaspec import *
+from pyspectrace.Model.AvanterSpectrometer.avaspec import *
 
 class AvantesSpectrometerEngine(QThread):
     data_signal = pyqtSignal(list, list)

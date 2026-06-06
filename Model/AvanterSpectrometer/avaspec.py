@@ -1,23 +1,25 @@
-﻿import sys
+import sys
 import ctypes
 import struct
 from PyQt5.QtCore import *
 from enum import Enum
 import os
+from pyspectrace.Model.sdkmanager import get_sdk_file
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
+package_base_dir = os.path.dirname(current_dir)
 
 
 
 if 'linux' in sys.platform: # Linux will have 'linux' or 'linux2'
     dll_name = "libavs.so.0"
-    dll_path = os.path.join(current_dir, "SDK", dll_name)
+    dll_path = get_sdk_file("avantes", dll_name, package_base_dir)
     lib = ctypes.WinDLL(rf"{dll_path}")
     # lib = ctypes.CDLL("/usr/local/lib/libavs.so.0")
     func = ctypes.CFUNCTYPE
 elif 'darwin' in sys.platform: # macOS will have 'darwin'
     dll_name = "libavs.0.dylib"
-    dll_path = os.path.join(current_dir, "SDK", dll_name)
+    dll_path = get_sdk_file("avantes", dll_name, package_base_dir)
     lib = ctypes.WinDLL(rf"{dll_path}")
     # lib = ctypes.CDLL("/usr/local/lib/libavs.0.dylib")
     func = ctypes.CFUNCTYPE
@@ -26,14 +28,14 @@ else: # Windows will have 'win32' or 'cygwin'
     if (ctypes.sizeof(ctypes.c_voidp) == 8): # 64 bit
         WM_MEAS_READY = 0x8001
         dll_name = "avaspecx64.dll"
-        dll_path = os.path.join(current_dir, "SDK", dll_name)
+        dll_path = get_sdk_file("avantes", dll_name, package_base_dir)
         lib = ctypes.WinDLL(rf"{dll_path}")
         # lib = ctypes.WinDLL("avaspecx64.dll")
         func = ctypes.WINFUNCTYPE
     else:
         WM_MEAS_READY = 0x0401
         dll_name = "avaspec.dll"
-        dll_path = os.path.join(current_dir, "SDK", dll_name)
+        dll_path = get_sdk_file("avantes", dll_name, package_base_dir)
         lib = ctypes.WinDLL(rf"{dll_path}")
         # lib = ctypes.WinDLL("avaspec.dll")
         func = ctypes.WINFUNCTYPE

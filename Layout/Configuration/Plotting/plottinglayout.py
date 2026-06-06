@@ -1,7 +1,6 @@
-from PyQt5.QtWidgets import QTabWidget, QWidget, QVBoxLayout
-from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
-from Layout.Configuration.Plotting.Sensorgram.sensorgramlayout import SensorgramLayout
-from Layout.Configuration.Plotting.Spectrum.spectrumlayout import SpectrumLayout
+from PyQt5.QtWidgets import (QTabWidget, QWidget, QVBoxLayout)
+from pyspectrace.Layout.Configuration.Plotting.Sensorgram.sensorgramlayout import SensorgramLayout
+from pyspectrace.Layout.Configuration.Plotting.Spectrum.spectrumlayout import SpectrumLayout
 
 class PlottingLayout(QWidget): 
     def __init__(self, parent):

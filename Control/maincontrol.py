@@ -1,15 +1,12 @@
-from Control.Configuration.configurationcontrol import ConfiggurationControl
-from Control.Plotting.plottingcontrol import PlottingControl
-from Control.Menusbar.menusbarcontrol import MenusbarControl
+from pyspectrace.Control.Configuration.configurationcontrol import ConfiggurationControl
+from pyspectrace.Control.Plotting.plottingcontrol import PlottingControl
+from pyspectrace.Control.Menusbar.menusbarcontrol import MenusbarControl
 from PyQt5.QtCore import QTimer, QTime
-import sys
 import time
 import os
 from PyQt5.QtWidgets import (
-    QFileDialog,
-    QMessageBox
+    QFileDialog, QMessageBox
 )
-import numpy as np
 
 class MainControl:
     def __init__(self, model, view):
