@@ -75,6 +75,3 @@ Please add to the list if you have found that it works in your spectrometer. It 
 - Feel free to contact us via Iwan Darmadi (email:iwan.darmadi@alumni.ui.ac.id) for technical support, bug reports, feature requests, or questions regarding PySpecTrace.
 
 
----
-
-
