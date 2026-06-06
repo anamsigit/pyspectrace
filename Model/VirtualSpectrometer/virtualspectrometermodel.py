@@ -1,6 +1,5 @@
 import seatease.cseatease as spectro
-from scipy.ndimage import gaussian_filter1d
-from PyQt5.QtCore import QTimer, pyqtSignal, QThread, QObject
+from PyQt5.QtCore import pyqtSignal, QThread
 import numpy as np
 
 class VirtualSpectrometerEngine(QThread):

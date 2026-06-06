@@ -1,6 +1,6 @@
-from Layout.Menusbar.Tool.Plot3D.plot3dlayout import Plot3DLayout
-from Layout.Menusbar.Tool.PlotSensorgram.plotsensorgramlayout import PlotSensorgramLayout
-from Layout.Menusbar.Tool.Convert.convertlayout import ConvertLayout
+from pyspectrace.Layout.Menusbar.Tool.Plot3D.plot3dlayout import Plot3DLayout
+from pyspectrace.Layout.Menusbar.Tool.PlotSensorgram.plotsensorgramlayout import PlotSensorgramLayout
+from pyspectrace.Layout.Menusbar.Tool.Convert.convertlayout import ConvertLayout
 
 class ToolLayout:
     def __init__(self, parent):

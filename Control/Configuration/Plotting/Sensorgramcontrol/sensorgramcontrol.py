@@ -1,14 +1,8 @@
-from PyQt5.QtCore import QTimer
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QMessageBox, QVBoxLayout
-from PyQt5.QtGui import QColor
-import pyqtgraph as pg
 import matplotlib.pyplot as plt
-from PyQt5.QtWidgets import QApplication, QFileDialog
+from PyQt5.QtWidgets import QFileDialog
 import os
 import csv
 from datetime import datetime
-import time
-import numpy as np
 
 class SensorgramControl:
     def __init__(self, model, view):

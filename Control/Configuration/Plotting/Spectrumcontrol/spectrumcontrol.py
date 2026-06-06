@@ -1,7 +1,5 @@
-from PyQt5.QtCore import QTimer
 from datetime import datetime, timedelta
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QMessageBox, QVBoxLayout
-import time
+from PyQt5.QtWidgets import QMessageBox
 import pyqtgraph as pg
 import random
 

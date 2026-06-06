@@ -1,5 +1,5 @@
-from Control.Configuration.Acquisition.Communication.communicationcontrol import CommunicationControl
-from Control.Configuration.Acquisition.Saving.savingcontrol import SavingControl
+from pyspectrace.Control.Configuration.Acquisition.Communication.communicationcontrol import CommunicationControl
+from pyspectrace.Control.Configuration.Acquisition.Saving.savingcontrol import SavingControl
 class AcquisitionControl:
     def __init__(self, 
                  model, 

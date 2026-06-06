@@ -1,6 +1,5 @@
 import sys
 import pandas as pd
-import numpy as np
 from PyQt5.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget, QPushButton, QFileDialog
 import pyqtgraph as pg
 

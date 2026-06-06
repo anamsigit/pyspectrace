@@ -1,11 +1,7 @@
-from PyQt5.QtWidgets import (
-    QTabWidget, QWidget, QVBoxLayout
+from PyQt5.QtWidgets import (QTabWidget, QWidget, QVBoxLayout
 )
-from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
-# from Layout.Configuration.Reference.NormalizationSpectrum.BrightSpectrum.brightspectrumlayout import BrightSpectrumLayout
-# from Layout.Configuration.Reference.NormalizationSpectrum.DarkSpectrum.darkspectrumlayout import DarkSpectrumLayout
-from Layout.Configuration.Reference.BaselineSpectrum.baselinespectrumlayout import BaselineSpectrumLayout
-from Layout.Configuration.Reference.NormalizationSpectrum.normalizationspectrumlayout import NormalizationSpectrumLayout
+from pyspectrace.Layout.Configuration.Reference.BaselineSpectrum.baselinespectrumlayout import BaselineSpectrumLayout
+from pyspectrace.Layout.Configuration.Reference.NormalizationSpectrum.normalizationspectrumlayout import NormalizationSpectrumLayout
 
 class ReferenceLayout(QWidget): 
     def __init__(self, parent):

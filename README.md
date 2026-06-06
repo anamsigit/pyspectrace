@@ -4,29 +4,33 @@
 
 ![PySpecTrace Application](GUI_snapshot.gif)
 
-## How to Install and Run
-### Download the Code
-- Go to the repository: [pyspectrace](https://github.com/anamsigit/pyspectrace)
-- Click code then download ZIP
-- Extract the ZIP file to your desired location
-
-### Install Dependencies
-Open a terminal or Command Prompt in the extracted project directory then run the following command:
+## Installation
+Open a terminal or Command Prompt
+then run the following command to install the latest version from PyPI:
 ```
-pip install -r requirements.txt
+pip install pyspectrace
 ```
 
 ### Run the Application 
-After installation is complete, start the program with:
+After installation is complete, start the program with open terminal and write:
 ```
-python main.py
+pyspectrace
 ```
 
 ### Spectrometer SDK Setup
-To connect the software with supported spectrometers, you must manually provide the required SDK files (DLLs). These SDKs are proprietary and must be obtained directly from the hardware manufacturers. Place the SDK files in the following directories:
-- Ocean Optics Spectrometer: ```Model/OceanSpectrometer/Oceandirect/lib```
-- Avantes Spectrometer: ```Model/AvanterSpectrometer/SDK```
-- CNI Laser Spectrometer: ```Model/CNILaserSpectrometer/SDK```
+To connect the software with supported spectrometers, you must manually provide the required SDK files (DLLs/shared libraries). These SDKs are proprietary and must be obtained directly from the hardware manufacturers.
+
+You can add SDK files from the application menu:
+1. Open PySpecTrace.
+2. Click menu bar ```SDK```.
+3. Choose the vendor: ```Ocean Optics```, ```CNI Laser```, or ```Avantes```.
+4. Select ```Add ... DLL``` and choose the required ```.dll``` file.
+5. Close PySpecTrace then run again
+
+PySpecTrace stores user-provided SDK files in the user data directory. This keeps the PyPI package free from proprietary SDK files.
+
+### Requirements
+* Python 3.9 – 3.12
 
 ***Notes for Avantes Spectrometer***: If the spectrometer is still not detected after placing the SDK, please Install the official Avantes interface software from https://www.avantes.com/products/software/
 
@@ -36,9 +40,12 @@ _If you encounter any issues or need assistance, we will do our best to help. Pl
 
 
 ## Extra Documentation
+- **Zenodo archive:** [doi.org/10.5281/zenodo.18918222](https://doi.org/10.5281/zenodo.18918222)
 - **Repository:** [https://github.com/anamsigit/pyspectrace](https://github.com/anamsigit/pyspectrace)
 - **Supporting information:** [PySpecTrace_SI.pdf](https://github.com/anamsigit/pyspectrace/blob/main/PySpecTrace_SI.pdf)
 - **Demonstration video:** [Google drive](https://drive.google.com/file/d/1Tj6Fig017nFhzMavVcG9cRoBS5tbMKVn/view?usp=sharing)
+
+
 
 ## Key Features
 - **Real-time spectral visualization:** Enables immediate monitoring of spectral changes during experiments.
@@ -54,9 +61,7 @@ _If you encounter any issues or need assistance, we will do our best to help. Pl
 - This project has been tested with **Python 3.9.13**.
 
 ## List of working spectrometers
-PySpecTrace v.1.0.0 has been tested and working seamlessly with these commercial spectrometers (on Windows OS):
-
-## Supported Spectrometers
+PySpecTrace has been tested and working seamlessly with these commercial spectrometers (on Windows OS). Testing was performed using some instruments available from several research laboratories: Photonics Research Center of Indonesia; Chemistry Dept. of Chulalongkorn University; Electrical Eng. Dept. of Universiti Teknologi Malaysia; IMRAN, Tohoku University, Physics Dept. of Universitas Indonesia.
 
 | Ocean Optics           | Avantes                      | CNI          |
 |-----------------------|------------------------------|--------------|
@@ -67,9 +72,9 @@ PySpecTrace v.1.0.0 has been tested and working seamlessly with these commercial
 Please add to the list if you have found that it works in your spectrometer. It will be a nice information for new user.
 
 ## Corresponding contact
-- Feel free to contact us via Iwan Darmadi (email:iwan.darmadi@alumni.ui.ac.id)
+- Feel free to contact us via Iwan Darmadi (email:iwan.darmadi@alumni.ui.ac.id) for technical support, bug reports, feature requests, or questions regarding PySpecTrace.
 
 
 ---
 
-*Sigit Khoirul Anam, Suwardi, Andrea Baldi, Ferry Anggoro Ardy Nugroho, Iwan Darmadi*
+

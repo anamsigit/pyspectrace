@@ -1,5 +1,5 @@
-from Control.Plotting.Spectrum.spectrumcontrol import SpectrumControl
-from Control.Plotting.Sensorgram.sensorgramcontrol import SensorgramControl
+from pyspectrace.Control.Plotting.Spectrum.spectrumcontrol import SpectrumControl
+from pyspectrace.Control.Plotting.Sensorgram.sensorgramcontrol import SensorgramControl
 
 class PlottingControl:
     def __init__(self, 

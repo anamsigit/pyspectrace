@@ -1,16 +1,13 @@
-import sys
 import numpy as np
 from PyQt5.QtWidgets import (
-    QApplication, QMainWindow, QVBoxLayout, 
+    QMainWindow, QVBoxLayout, 
     QWidget, QSlider, QDoubleSpinBox, 
     QHBoxLayout, QLabel, QGroupBox, 
     QCheckBox, QMessageBox, QPushButton, QSpinBox
     )
 
-from PyQt5.QtCore import QTimer, pyqtSignal, QThread, QObject
-import time
-from pyqtgraph import PlotWidget, plot
-import os
+from PyQt5.QtCore import QTimer, pyqtSignal
+from pyqtgraph import PlotWidget
 
 class SimulatorSpectrometer(QMainWindow):
     frame_finish_emit = pyqtSignal()

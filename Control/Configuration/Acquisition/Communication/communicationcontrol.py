@@ -1,5 +1,3 @@
-from PyQt5.QtCore import QTimer
-import numpy as np
 
 class CommunicationControl:
     def __init__(self, model, view):

@@ -1,5 +1,5 @@
-from Layout.Menusbar.Tool.Plot3D.plot3dlayout import Plot3DLayout
-from PyQt5.QtWidgets import QMenuBar, QAction
+
+from PyQt5.QtWidgets import  QAction
 
 class ConvertLayout:
     def __init__(self, parent):
