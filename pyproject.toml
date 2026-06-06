@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "pyspectrace"
 version = "2.0.0"
-description = "**PySpecTrace** is an open-source, Python-based graphical user interface (GUI) designed for real-time UV-visible-NIR spectroscopy data analysis. It addresses the limitations of proprietary spectrometer software by providing advanced, customizable, and real-time spectral tracking and analysis tools suitable for a wide range of scientific disciplines"
+description = "PySpecTrace is an open-source, Python-based graphical user interface (GUI) designed for real-time UV-visible-NIR spectroscopy data analysis. It addresses the limitations of proprietary spectrometer software by providing advanced, customizable, and real-time spectral tracking and analysis tools suitable for a wide range of scientific disciplines"
 readme = "README.md"
 requires-python = ">=3.9,<3.13"
 license = "Apache-2.0"
