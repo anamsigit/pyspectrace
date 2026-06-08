@@ -1,4 +1,4 @@
-# PySpecTrace: Python-based Graphical User Interface (GUI) for Real-time UV-vis-NIR Spectroscopy Analysis
+# PySpecTrace: Python-based Graphical User Interface (GUI) for Real-time UV-Vis-NIR Spectroscopy Analysis
 
 **PySpecTrace** is an open-source, Python-based graphical user interface (GUI) designed for real-time UV-visible-NIR spectroscopy data analysis. It addresses the limitations of proprietary spectrometer software by providing advanced, customizable, and real-time spectral tracking and analysis tools suitable for a wide range of scientific disciplines.
 
@@ -25,16 +25,20 @@
 - Uses popular Python libraries including **PyQt5, NumPy, SciPy, Pandas, Matplotlib, and PyqtGraph**.
 
 ## List of working spectrometers
-PySpecTrace v.1.0.0 has been tested and working seamlessly on these commercial spectrometers (on Windows OS):
-### Ocean optios:
+PySpecTrace v.1.0.0 has been tested and working seamlessly with these commercial spectrometers (on Windows OS):
+### Ocean optics:
 - Maya PRO2000
 - HR 4000CG-UV-NIR
+
 ### Avantes:
 - AvaSpec-ULS4096CL-EVO
 ### CNI:
 - Aurora 4000
 
 Please add to the list if you have found that it works in your spectrometer. It will be a nice information for new user.
+
+## Corresponding contact
+- Feel free to contact us via Iwan Darmadi (email:iwan.darmadi@alumni.ui.ac.id)
 
 
 ---
