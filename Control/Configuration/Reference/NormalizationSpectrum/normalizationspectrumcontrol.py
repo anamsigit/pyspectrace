@@ -1,8 +1,5 @@
-from Control.Configuration.Reference.NormalizationSpectrum.BrightSpectrum.brightspectrumcontrol import BrightSpectrumControl
-from Control.Configuration.Reference.NormalizationSpectrum.DarkSpectrum.darkspectrumcontrol import DarkSpectrumControl
-import numpy as np
-from datetime import datetime
-import os
+from pyspectrace.Control.Configuration.Reference.NormalizationSpectrum.BrightSpectrum.brightspectrumcontrol import BrightSpectrumControl
+from pyspectrace.Control.Configuration.Reference.NormalizationSpectrum.DarkSpectrum.darkspectrumcontrol import DarkSpectrumControl
 
 
 class NormalizationSpectrumControl:

@@ -1,13 +1,15 @@
 from PyQt5.QtWidgets import QMenuBar, QAction
-from Layout.Menusbar.Tool.toollayout import ToolLayout
-from Layout.Menusbar.File.showrecordcontrollerlayout import ShowRecordControllerLayout
-from Layout.Menusbar.File.exitlayout import ExitLayout
+from pyspectrace.Layout.Menusbar.Tool.toollayout import ToolLayout
+from pyspectrace.Layout.Menusbar.File.showrecordcontrollerlayout import ShowRecordControllerLayout
+from pyspectrace.Layout.Menusbar.File.exitlayout import ExitLayout
+from pyspectrace.Layout.Menusbar.SDK.sdklayout import SDKLayout
 
 class MenusbarLayout:
     def __init__(self, parent):
         self.parent = parent
 
         self.toollayout = ToolLayout(self.parent)
+        self.sdklayout = SDKLayout(self.parent)
         self.exitlayout = ExitLayout(self.parent)
         self.showrecordcontrollerlayout = ShowRecordControllerLayout(self.parent)
         menubar = QMenuBar(self.parent)
@@ -15,11 +17,15 @@ class MenusbarLayout:
         file_menu = menubar.addMenu('File')
         edit_menu = menubar.addMenu('Edit')
         tool_menu = menubar.addMenu('Tool')
+        sdk_menu = menubar.addMenu('SDK')
         # optimize_menu = menubar.addMenu('Optimize')
         help_menu = menubar.addMenu('Help')
         # geneticalgorithm_menu  = optimize_menu.addMenu('Genetic Algorithm')
 
         plot3d_menu = tool_menu.addMenu('3D Plot')
+        ocean_sdk_menu = sdk_menu.addMenu('Ocean Optics')
+        cni_sdk_menu = sdk_menu.addMenu('CNI Laser')
+        avantes_sdk_menu = sdk_menu.addMenu('Avantes')
         self.preference = QAction('Preference', self.parent)
         
         # self.show_log = QAction('Show log', self.parent)
@@ -38,6 +44,11 @@ class MenusbarLayout:
         tool_menu.addAction(self.toollayout.plotsensorgramlayout.plot_sensogram_choosing)
         # plot3d_menu.addAction(self.toollayout.plot3dlayout.plot_3d_current)
         plot3d_menu.addAction(self.toollayout.plot3dlayout.plot_3d_choosing)
+        ocean_sdk_menu.addAction(self.sdklayout.ocean_add_dll)
+        cni_sdk_menu.addAction(self.sdklayout.cni_add_dll)
+        avantes_sdk_menu.addAction(self.sdklayout.avantes_add_dll)
+        sdk_menu.addSeparator()
+        sdk_menu.addAction(self.sdklayout.open_sdk_folder)
         self.parent.setMenuBar(menubar)
 
 

@@ -1,9 +1,10 @@
 from PyQt5.QtWidgets import QTabWidget, QListWidget, QSplitter, QWidget, QGridLayout, QVBoxLayout, QHBoxLayout, QPushButton, QMainWindow, QGroupBox, QLabel
 from PyQt5.QtCore import Qt
 
-from Layout.Configuration.configurationlayout import ConfigurationLayout
-from Layout.Menusbar.menusbarlayout import MenusbarLayout
-from Layout.Plotting.plottinglayout import PlottingLayout
+
+from pyspectrace.Layout.Configuration.configurationlayout import ConfigurationLayout
+from pyspectrace.Layout.Menusbar.menusbarlayout import MenusbarLayout
+from pyspectrace.Layout.Plotting.plottinglayout import PlottingLayout
 
 
 class MainLayout(QMainWindow):

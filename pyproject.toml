@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyspectrace"
+version = "2.0.0"
+description = "PySpecTrace is an open-source, Python-based graphical user interface (GUI) designed for real-time UV-visible-NIR spectroscopy data analysis. It addresses the limitations of proprietary spectrometer software by providing advanced, customizable, and real-time spectral tracking and analysis tools suitable for a wide range of scientific disciplines"
+readme = "README.md"
+requires-python = ">=3.9,<3.13"
+license = "Apache-2.0"
+
+authors = [
+  { name = "Iwan Darmadi", email = "iwan.darmadi@alumni.ui.ac.id" }
+]
+
+classifiers = [
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+  "numpy==1.26.4",
+  "pandas==2.3.3",
+  "matplotlib==3.9.4",
+  "PyQt5==5.15.11",
+  "pyqtgraph==0.13.7",
+  "scipy==1.13.1",
+  "seatease==0.4.0",
+  "seabreeze==2.11.0"
+]
+
+[project.gui-scripts]
+pyspectrace = "pyspectrace.main:main"

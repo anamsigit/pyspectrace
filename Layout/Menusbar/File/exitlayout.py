@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QMenuBar, QAction
+from PyQt5.QtWidgets import  QAction
 
 class ExitLayout:
     def __init__(self, parent):

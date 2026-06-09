@@ -1,8 +1,7 @@
-from PyQt5.QtCore import QTimer
 import numpy as np
 
 from PyQt5.QtCore import QObject, pyqtSignal
-from Model.OceanSpectrometer.Oceandirect.OceanDirectAPI import OceanDirectAPI
+from pyspectrace.Model.OceanSpectrometer.Oceandirect.OceanDirectAPI import OceanDirectAPI
 
 class OceanSpectrometer(QObject):
     frame_finish_emit = pyqtSignal()

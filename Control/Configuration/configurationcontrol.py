@@ -1,8 +1,7 @@
-from Control.Configuration.Acquisition.acquisitioncontrol import AcquisitionControl
-from Control.Configuration.Reference.referencecontrol import ReferenceControl
-from Control.Configuration.Plotting.plottingcontrol import PlottingLayout
-from Control.Configuration.Processing.processingcontrol import ProcessingControl
-from PyQt5.QtCore import QTimer
+from pyspectrace.Control.Configuration.Acquisition.acquisitioncontrol import AcquisitionControl
+from pyspectrace.Control.Configuration.Reference.referencecontrol import ReferenceControl
+from pyspectrace.Control.Configuration.Plotting.plottingcontrol import PlottingLayout
+from pyspectrace.Control.Configuration.Processing.processingcontrol import ProcessingControl
 
 class ConfiggurationControl:
     def __init__(self, 

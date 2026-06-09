@@ -1,19 +1,19 @@
 try:
-    from Model.OceanSpectrometer.oceanspectrometermodel import OceanSpectrometer
+    from pyspectrace.Model.OceanSpectrometer.oceanspectrometermodel import OceanSpectrometer
 except:
     pass
 try:
-    from Model.CNILaserSpectrometer.cnilaserspectrometermodel import CNILaserSpectrometer
+    from pyspectrace.Model.CNILaserSpectrometer.cnilaserspectrometermodel import CNILaserSpectrometer
 except:
     pass
 try:
-    from Model.AvanterSpectrometer.avantesspectrometermodel import AvantesSpectrometer
+    from pyspectrace.Model.AvanterSpectrometer.avantesspectrometermodel import AvantesSpectrometer
 except:
     pass
 
-from Model.RecordSpectrometer.recordspectrometermodel import RecordSpectrometer
-from Model.SimulatorSpectrometer.simulatorspectrometermodel import SimulatorSpectrometer
-from Model.VirtualSpectrometer.virtualspectrometermodel import VirtualSpectrometer
+from pyspectrace.Model.RecordSpectrometer.recordspectrometermodel import RecordSpectrometer
+from pyspectrace.Model.SimulatorSpectrometer.simulatorspectrometermodel import SimulatorSpectrometer
+from pyspectrace.Model.VirtualSpectrometer.virtualspectrometermodel import VirtualSpectrometer
 
 
 class MainModel:
@@ -61,11 +61,8 @@ class MainModel:
         except:
             pass
         try:
-            print("avantess")
             self.avantesspectrometer = AvantesSpectrometer()
             self.available_spectrometer.append(self.avantesspectrometer)
-            print("avantess pass")
-            # pass
         except:
             pass
         # print("avantess")

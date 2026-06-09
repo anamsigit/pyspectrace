@@ -1,16 +1,9 @@
-import sys
 import numpy as np
-from PyQt5.QtCore import Qt, QThread, pyqtSignal
-import matplotlib.pyplot as plt
-import seatease.cseatease as spectro
-from matplotlib.figure import Figure
-from PyQt5.QtGui import QIntValidator, QDoubleValidator, QColor
-from PyQt5.QtWidgets import (
-    QApplication, QMainWindow, QTabWidget, QWidget, QVBoxLayout, 
-    QHBoxLayout, QLabel, QPushButton, QSpinBox, QAction, QCheckBox, 
-    QFileDialog, QComboBox, QGroupBox, QLineEdit, QFormLayout, QTableWidget,
-    QColorDialog, QDialog, QToolBar, QDoubleSpinBox
-)
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QDoubleValidator, QColor
+from PyQt5.QtWidgets import (QWidget, QVBoxLayout, 
+    QHBoxLayout, QPushButton, QSpinBox, QComboBox, QGroupBox, QLineEdit, QTableWidget,
+    QColorDialog)
 
 class PolynomialFittingLayout(QWidget):
     def __init__(self, parent=None):

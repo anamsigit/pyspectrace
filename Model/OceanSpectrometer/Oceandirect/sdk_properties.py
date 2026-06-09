@@ -9,6 +9,7 @@ import os
 import getpass
 import platform
 import os.path
+from pyspectrace.Model.sdkmanager import get_sdk_file
 
 user=getpass.getuser()
 user_home=os.path.expanduser("~"+user)
@@ -27,7 +28,8 @@ else:
     oceandirect_libname=("liboceandirect.so")
 
 module_path=os.path.dirname(__file__)
-oceandirect_dll = module_path + os.path.normpath("/lib/"+oceandirect_libname)
+package_base_dir = os.path.dirname(os.path.dirname(module_path))
+oceandirect_dll = get_sdk_file("ocean", oceandirect_libname, package_base_dir)
 
 #oceandirect_dll = os.path.normpath(program_data+"/lib/"+oceandirect_libname)
 #print("oceandirect_dll: ", oceandirect_dll)

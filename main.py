@@ -12,21 +12,23 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-
 import sys
 from PyQt5.QtWidgets import QApplication
-from Layout.mainlayout import MainLayout
-from Control.maincontrol import MainControl
-from Model.mainmodel import MainModel
+from pyspectrace.Layout.mainlayout import MainLayout
+from pyspectrace.Control.maincontrol import MainControl
+from pyspectrace.Model.mainmodel import MainModel
 
-# def __del__(self):
-#     # Pastikan untuk melepaskan perangkat saat objek ini dihancurkan
-#     self.dll.LTs_ReleaseAllSpectrometers()
-
-if __name__ == '__main__':
+def main():
     app = QApplication(sys.argv)
+
     model = MainModel()
     view = MainLayout()
     presenter = MainControl(model, view)
+
     view.show()
+
     sys.exit(app.exec_())
+
+
+if __name__ == "__main__":
+    main()

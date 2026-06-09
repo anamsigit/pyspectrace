@@ -1,10 +1,8 @@
-
-import sys
 import os
 import numpy as np
 import matplotlib.pyplot as plt
 from PyQt5.QtWidgets import (
-    QApplication, QMainWindow, QPushButton, QVBoxLayout, QWidget,
+    QMainWindow, QPushButton, QVBoxLayout, QWidget,
     QFileDialog, QHBoxLayout, QLabel, QDoubleSpinBox, QSpinBox
 )
 import matplotlib.pyplot as plt

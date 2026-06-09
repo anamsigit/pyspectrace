@@ -1,5 +1,4 @@
 import numpy as np
-from scipy.optimize import curve_fit
 import copy
 
 class PolyPeakFittingControl:

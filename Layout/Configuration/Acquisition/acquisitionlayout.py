@@ -1,7 +1,6 @@
 from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import (QTabWidget, QWidget, QVBoxLayout, QCheckBox, 
-    QComboBox, QGroupBox
-)
+from PyQt5.QtWidgets import (QTabWidget, QWidget, QVBoxLayout, 
+                             QCheckBox, QComboBox, QGroupBox)
 from .Communication.communicationlayout import CommunicationLayout
 from .Saving.savinglayout import SavingLayout
 from .Info.infolayout import InfoLayout

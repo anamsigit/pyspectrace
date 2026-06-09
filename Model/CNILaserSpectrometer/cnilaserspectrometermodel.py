@@ -2,6 +2,7 @@ import numpy as np
 from PyQt5.QtCore import pyqtSignal
 import os
 import ctypes
+from pyspectrace.Model.sdkmanager import get_sdk_file
 
 
 class CNILaserSpectrometer:
@@ -10,7 +11,8 @@ class CNILaserSpectrometer:
     def __init__(self):
         current_dir = os.path.dirname(os.path.abspath(__file__))
         dll_name = "SpectrometersControlLTG.dll"
-        self.dll_path = os.path.join(current_dir, "SDK", dll_name)
+        package_base_dir = os.path.dirname(current_dir)
+        self.dll_path = get_sdk_file("cni", dll_name, package_base_dir)
         self.dll = ctypes.CDLL(self.dll_path)
 
         self.dll.LTs_InitAllSpectrometers()

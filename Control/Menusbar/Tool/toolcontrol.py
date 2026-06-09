@@ -1,9 +1,6 @@
-from Control.Menusbar.Tool.Plot3D.plot3dcontrol import Plot3DControl
-from Control.Menusbar.Tool.Convert.convertcontrol import ConvertControl
-from Control.Menusbar.Tool.PlotSensorgram.plotsensorgramcontrol import PlotSensorgramControl
-import matplotlib.pyplot as plt
-import numpy as np
-import os
+from pyspectrace.Control.Menusbar.Tool.Plot3D.plot3dcontrol import Plot3DControl
+from pyspectrace.Control.Menusbar.Tool.Convert.convertcontrol import ConvertControl
+from pyspectrace.Control.Menusbar.Tool.PlotSensorgram.plotsensorgramcontrol import PlotSensorgramControl
 
 class ToolControl:
     def __init__(self, 
