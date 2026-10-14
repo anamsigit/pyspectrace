@@ -25,10 +25,10 @@ class SensorgramControl:
 
         self.inittime = 0
     def mainloop(self):
-        x = self.view.plottinglayout.sensorgramlayout.gaussianshiftpeak_list
-        if any(val > 600 for row in x for val in row):
+        # x = self.view.plottinglayout.sensorgramlayout.gaussianshiftpeak_list
+        # if any(val > 600 for row in x for val in row):
             # do something
-            print("trigger arduino to take an action!")
+            # print("trigger arduino to take some action!")
         pass
 
 
