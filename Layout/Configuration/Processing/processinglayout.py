@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import (QTabWidget, QWidget, QVBoxLayout, QCheckBox, QComboBox)
+from PyQt5.QtWidgets import (QTabWidget, QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QCheckBox, QComboBox)
 from pyspectrace.Layout.Configuration.Processing.Shift.shiftlayout import ShiftLayout
 from pyspectrace.Layout.Configuration.Processing.ShiftPeak.shiftpeaklayout import ShiftPeakLayout
 from pyspectrace.Layout.Configuration.Processing.ShiftPeakWidth.shiftpeakwidthlayout import ShiftPeakWidthLayout
@@ -21,6 +21,13 @@ class ProcessingLayout(QWidget):
         nested_tab.addTab(self.shiftlayout, "Non Peak")
         
         main_layout.addWidget(nested_tab)
+        self.save_fitting_configuration_button = QPushButton("Save Fitting Conf.")
+        self.load_fitting_configuration_button = QPushButton("Load Fitting Conf.")
+
+        fitting_configuration_layout = QHBoxLayout()
+        fitting_configuration_layout.addWidget(self.save_fitting_configuration_button)
+        fitting_configuration_layout.addWidget(self.load_fitting_configuration_button)
+        main_layout.addLayout(fitting_configuration_layout)
         main_layout.addStretch()
         self.setLayout(main_layout)
         
