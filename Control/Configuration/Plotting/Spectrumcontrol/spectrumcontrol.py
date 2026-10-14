@@ -1,4 +1,3 @@
-from datetime import datetime, timedelta
 from PyQt5.QtWidgets import QMessageBox
 import pyqtgraph as pg
 import random
@@ -8,16 +7,11 @@ class SpectrumControl:
         self.model = model
         self.view = view       
 
-        self.start_time = datetime.now()
-        self.current_forprogress = 0
-        self.elapsed_time = 0
-
-        self.start_time_foraccumulated = datetime.now()
-        self.current_foraccumulated = 0
+        self.frame_count = 0
 
         self.accumulated_wavelengths = []
         self.accumulated_intensities = []
-        self.accumulated_second = []
+        self.accumulated_frames = []  # Menyimpan informasi frame untuk legenda plot
 
         self.state_accumulated = False
         self.view.configurationlayout.plottinglayout.spectrumlayout.start_acquire.setEnabled(True)
@@ -44,20 +38,20 @@ class SpectrumControl:
 
     def mainloop(self):
         if self.state_accumulated:
-            _current_time = datetime.now()
-            self.elapsed_time = (_current_time - self.start_time).total_seconds()
+            self.frame_count += 1
             interval = self.view.configurationlayout.plottinglayout.spectrumlayout.interval_acquire.value()
-            progress_percent = min(int((self.elapsed_time / interval) * 100), 100)
+            
+            # Menghitung persentase progress bar berdasarkan frame count vs interval
+            progress_percent = min(int((self.frame_count / interval) * 100), 100) if interval > 0 else 100
             self.view.configurationlayout.plottinglayout.spectrumlayout.progress.setValue(progress_percent)
-            if self.elapsed_time >= self.view.configurationlayout.plottinglayout.spectrumlayout.interval_acquire.value():
-                self.intervalstart()
-                self.accumulated_second.append((_current_time - self.start_time_foraccumulated).total_seconds())
+            
+            if self.frame_count >= interval:
                 self.accumulating_spectrum()
-                self.start_time = _current_time
+                self.accumulated_frames.append(self.frame_count)
+                self.frame_count = 0  # Reset frame counter untuk interval berikutnya
                 self.view.configurationlayout.plottinglayout.spectrumlayout.progress.setValue(0)
         else:
-            _current_time = datetime.now()
-            self.start_time = _current_time - timedelta(seconds=self.elapsed_time)
+            pass
             
     def spectrum_data(self):
         spectrum = [
@@ -65,9 +59,6 @@ class SpectrumControl:
                 self.view.plottinglayout.spectrumlayout.intensities,
                 ]
         return spectrum[0][0], spectrum[1][0]
-
-    def intervalstart(self):
-        self.current_time = datetime.now()
 
     def accumulating_spectrum(self):
         wavelengths, intensities = self.spectrum_data()
@@ -85,15 +76,17 @@ class SpectrumControl:
     def restart(self):
         self.accumulated_wavelengths = []
         self.accumulated_intensities = []
+        self.accumulated_frames = []
+        self.frame_count = 0
         self.view.configurationlayout.plottinglayout.spectrumlayout.sum.setText(f"{len(self.accumulated_intensities)}")
 
     def plot(self):
-        self.window = pg.GraphicsLayoutWidget(show=True, title="Spectrum Over Time")
+        self.window = pg.GraphicsLayoutWidget(show=True, title="Spectrum overtime")
         self.window.setBackground('w')
         self.plotting = self.window.addPlot()
         self.plotting.addLegend()
         for i, (wavelengths, intensities) in enumerate(zip(self.accumulated_wavelengths, self.accumulated_intensities)):
             color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
             pen = pg.mkPen(color=color, width=1)
-            self.plotting.plot(wavelengths, intensities, pen=pen, name=f"{self.accumulated_second[i]:.2f} second")
-            
+            # Menyesuaikan label legenda berdasarkan indeks atau akumulasi ke-i
+            self.plotting.plot(wavelengths, intensities, pen=pen, name=f"Spectrum {i+1}")
