@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import (QWidget, QVBoxLayout, 
     QHBoxLayout, QLabel, QPushButton, QGroupBox, 
-    QDoubleSpinBox, QProgressBar
+    QSpinBox, QProgressBar
 )
 
 class SpectrumLayout(QWidget): 
@@ -47,8 +47,8 @@ class SpectrumLayout(QWidget):
         groupBox = QGroupBox("Plotting overtime")
 
         interval_acquire_layout = QHBoxLayout()
-        interval_acquire_label = QLabel("acquire interval (s) :", self)
-        self.interval_acquire = QDoubleSpinBox(self)
+        interval_acquire_label = QLabel("acquire frame interval:", self)
+        self.interval_acquire = QSpinBox(self)
         self.progress = QProgressBar(self)
         self.sum = QLabel("0", self)
         self.interval_acquire.setRange(0.01, 1000)
