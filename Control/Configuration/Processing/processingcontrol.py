@@ -6,6 +6,7 @@ from pyspectrace.Control.Configuration.Processing.ShiftPeak.PolyPeakFitting.poly
 from pyspectrace.Control.Configuration.Processing.ShiftWidthPeak.LorentzianWidthPeakFitting.lorentzianwidthpeakfittingcontrol import LorentzianWidthPeakFittingControl
 from pyspectrace.Control.Configuration.Processing.ShiftWidthPeak.GaussianWidthPeakFitting.gaussianwidthpeakfittingcontrol import GaussianWidthPeakFittingControl
 from pyspectrace.Control.Configuration.Processing.ShiftWidthPeak.PolynomialWidthPeakFitting.polynomialwidthpeakfittingcontrol import PolynomialWidthPeakFittingControl
+from Control.Configuration.Processing.saveloadconfig import SaveLoadConfig
 
 class ProcessingControl:
     def __init__(self, model, view):
@@ -19,3 +20,5 @@ class ProcessingControl:
         self.lorentzianwidthpeakfittingcontrol = LorentzianWidthPeakFittingControl(model, view)
         self.gaussianwidthpeakfittingcontrol = GaussianWidthPeakFittingControl(model, view)
         self.polynomialwidthpeakfittingcontrol = PolynomialWidthPeakFittingControl(model, view)
+        
+        self.saveloadconfig = SaveLoadConfig(view)
