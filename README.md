@@ -21,7 +21,7 @@ pyspectrace
 To connect the software with supported spectrometers, you must manually provide the required SDK files (DLLs/shared libraries). These SDKs are proprietary and must be obtained directly from the hardware manufacturers.
 
 You can add SDK files from the application menu:
-1. Open PySpecTrace.
+1. Open 
 2. Click menu bar ```SDK```.
 3. Choose the vendor: ```Ocean Optics```, ```CNI Laser```, or ```Avantes```.
 4. Select ```Add ... DLL``` and choose the required ```.dll``` file.
@@ -71,7 +71,23 @@ PySpecTrace has been tested and working seamlessly with these commercial spectro
 
 Please add to the list if you have found that it works in your spectrometer. It will be a nice information for new user.
 
+## Running from Source
+If you prefer to run the application directly from the source code
+> 1. Navigate to the `src` directory:
+> ```bash
+> cd src
+> 
+> ```
+> 
+> 
+> 2. Run the application using Python:
+> ```bash
+> python -m pyspectrace.main
+> 
+> ```
+
+
 ## Corresponding contact
-- Feel free to contact us via Iwan Darmadi (email:iwan.darmadi@alumni.ui.ac.id) for technical support, bug reports, feature requests, or questions regarding PySpecTrace.
+- Feel free to contact us via Iwan Darmadi (email:iwan.darmadi@alumni.ui.ac.id) for technical support, bug reports, feature requests, or questions regarding 
 
 
