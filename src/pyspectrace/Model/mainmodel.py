@@ -1,13 +1,13 @@
 try:
-    from Model.OceanSpectrometer.oceanspectrometermodel import OceanSpectrometer
+    from pyspectrace.Model.OceanSpectrometer.oceanspectrometermodel import OceanSpectrometer
 except:
     pass
 try:
-    from Model.CNILaserSpectrometer.cnilaserspectrometermodel import CNILaserSpectrometer
+    from pyspectrace.Model.CNILaserSpectrometer.cnilaserspectrometermodel import CNILaserSpectrometer
 except:
     pass
 try:
-    from Model.AvanterSpectrometer.avantesspectrometermodel import AvantesSpectrometer
+    from pyspectrace.Model.AvanterSpectrometer.avantesspectrometermodel import AvantesSpectrometer
 except:
     pass
 
