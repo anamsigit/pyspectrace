@@ -51,7 +51,7 @@ class SpectrumLayout(QWidget):
         self.interval_acquire = QSpinBox(self)
         self.progress = QProgressBar(self)
         self.sum = QLabel("0", self)
-        self.interval_acquire.setRange(0.01, 1000)
+        self.interval_acquire.setRange(1, 1000)
         # self.interval_acquire.setEnabled(False)
         self.interval_acquire.setValue(30)
         self.progress.setTextVisible(False)
