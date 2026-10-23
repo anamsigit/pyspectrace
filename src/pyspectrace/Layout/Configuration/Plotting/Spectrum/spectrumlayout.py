@@ -53,7 +53,7 @@ class SpectrumLayout(QWidget):
         self.sum = QLabel("0", self)
         self.interval_acquire.setRange(1, 1000)
         # self.interval_acquire.setEnabled(False)
-        self.interval_acquire.setValue(30)
+        self.interval_acquire.setValue(3)
         self.progress.setTextVisible(False)
         interval_acquire_layout.addWidget(interval_acquire_label,4)
         interval_acquire_layout.addWidget(self.interval_acquire, 2)
