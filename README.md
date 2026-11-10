@@ -4,14 +4,39 @@
 
 ![PySpecTrace Application](GUI_snapshot.gif)
 
+### Requirements
+* Python 3.9 – 3.12
+
+***Notes for Avantes Spectrometer***: If the spectrometer is still not detected after placing the SDK, please Install the official Avantes interface software from https://www.avantes.com/products/software/
+
+> Detailed steps for running documented in the Manual: [PySpecTrace_Manual.pdf](https://github.com/anamsigit/pyspectrace/blob/main/PySpecTrace_Manual.pdf)
+
+_If you encounter any issues or need assistance, we will do our best to help. Please feel free to contact us via the **Corresponding Contact**_
+
+
 ## Installation
-Open a terminal or Command Prompt
-then run the following command to install the latest version from PyPI:
+
+First of all, current PySpecTrace depends on old version dependencies including Python 3.9-3.12. Therefore, we recommend to install PySpecTrace within isolated conda environment (via a terminal or Command Prompt):
+
+1. Create a dedicated environment (```pyspectracenv```):
+```
+conda create -n pyspectracenv python = 3.11
+```
+2. Activate the environment:
+```
+conda activate pyspectracenv
+```
+Within this environment, PySpecTrace can be installed using either (i) the Python Package Index (PyPI) or (ii) manual
+installation from the source code repository. We recommend installation via PyPI because it automatically resolves and
+installs the required dependencies.
+
+
+After conda environment is activated, run the following command to install the latest version from PyPI:
 ```
 pip install pyspectrace
 ```
 
-### Run the Application 
+### Running the Application 
 After installation is complete, start the program with open terminal and write:
 ```
 pyspectrace
@@ -29,22 +54,13 @@ You can add SDK files from the application menu:
 
 PySpecTrace stores user-provided SDK files in the user data directory. This keeps the PyPI package free from proprietary SDK files.
 
-### Requirements
-* Python 3.9 – 3.12
-
-***Notes for Avantes Spectrometer***: If the spectrometer is still not detected after placing the SDK, please Install the official Avantes interface software from https://www.avantes.com/products/software/
-
-> Detailed steps for running documented in the Manual: [PySpecTrace_Manual.pdf](https://github.com/anamsigit/pyspectrace/blob/main/PySpecTrace_Manual.pdf)
-
-_If you encounter any issues or need assistance, we will do our best to help. Please feel free to contact us via the **Corresponding Contact**_
-
 
 ## Extra Documentation
+- **Peer-reviewed aarticle:** [https://doi.org/10.12688/f1000research.180635.1] (https://doi.org/10.12688/f1000research.180635.1)
 - **Zenodo archive:** [doi.org/10.5281/zenodo.18918222](https://doi.org/10.5281/zenodo.18918222)
 - **Repository:** [https://github.com/anamsigit/pyspectrace](https://github.com/anamsigit/pyspectrace)
 - **Supporting information:** [PySpecTrace_SI.pdf](https://github.com/anamsigit/pyspectrace/blob/main/PySpecTrace_SI.pdf)
 - **Demonstration video:** [Google drive](https://drive.google.com/file/d/1Tj6Fig017nFhzMavVcG9cRoBS5tbMKVn/view?usp=sharing)
-
 
 
 ## Key Features
@@ -89,5 +105,9 @@ If you prefer to run the application directly from the source code
 
 ## Corresponding contact
 - Feel free to contact us via Iwan Darmadi (email:iwan.darmadi@alumni.ui.ac.id) for technical support, bug reports, feature requests, or questions regarding 
+
+## Citation
+- If you find PySpecTrace is useful and contribute a meaningful improvement to your work, feel free to cite this work to our peer-reviewed article: Anam, S. K.; Leonardy, J.; Suwardi, S.; Baldi, A.; Nugroho, F. A. A.; Darmadi, I. PySpecTrace: A Python-Based Graphical User Interface for Real-Time Spectroscopy Analysis and Data Analysis. F1000Res, 2026, 15, 1187. https://doi.org/10.12688/f1000research.180635.1.
+
 
 
