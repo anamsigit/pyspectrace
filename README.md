@@ -4,14 +4,6 @@
 
 ![PySpecTrace Application](GUI_snapshot.gif)
 
-### Requirements
-* Python 3.9 – 3.12
-
-***Notes for Avantes Spectrometer***: If the spectrometer is still not detected after placing the SDK, please Install the official Avantes interface software from https://www.avantes.com/products/software/
-
-> Detailed steps for running documented in the Manual: [PySpecTrace_Manual.pdf](https://github.com/anamsigit/pyspectrace/blob/main/PySpecTrace_Manual.pdf)
-
-_If you encounter any issues or need assistance, we will do our best to help. Please feel free to contact us via the **Corresponding Contact**_
 
 
 ## Installation
@@ -53,6 +45,15 @@ You can add SDK files from the application menu:
 5. Close PySpecTrace then run again
 
 PySpecTrace stores user-provided SDK files in the user data directory. This keeps the PyPI package free from proprietary SDK files.
+
+### Requirements
+* Python 3.9 – 3.12
+
+***Notes for Avantes Spectrometer***: If the spectrometer is still not detected after placing the SDK, please Install the official Avantes interface software from https://www.avantes.com/products/software/
+
+> Detailed steps for running documented in the Manual: [PySpecTrace_Manual.pdf](https://github.com/anamsigit/pyspectrace/blob/main/PySpecTrace_Manual.pdf)
+
+_If you encounter any issues or need assistance, we will do our best to help. Please feel free to contact us via the **Corresponding Contact**_
 
 
 ## Extra Documentation
